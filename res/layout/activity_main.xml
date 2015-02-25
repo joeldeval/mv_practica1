@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.practica1.MainActivity" >
+
+    <EditText
+        android:id="@+id/pesos1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convertir1"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="@string/lbl_peso"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/tipoCambio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/lbl_tipoCambio"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_convertir1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tipoCambio1"
+        android:layout_below="@+id/pesos1"
+        android:text="@string/lbl_convertir" />
+
+    <EditText
+        android:id="@+id/tipoCambio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convertir1"
+        android:layout_below="@+id/btn_convertir1"
+        android:layout_marginTop="110dp"
+        android:ems="10"
+        android:hint="@string/lbl_tipoCambio"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dolares2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convertir1"
+        android:layout_below="@+id/tipoCambio2"
+        android:ems="10"
+        android:hint="@string/lbl_dolar"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_convertir2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convertir1"
+        android:layout_below="@+id/dolares2"
+        android:text="@string/lbl_convertir" />
+
+    <EditText
+        android:id="@+id/pesos2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convertir1"
+        android:layout_below="@+id/btn_convertir2"
+        android:ems="10"
+        android:hint="@string/lbl_peso"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dolares1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_convertir1"
+        android:layout_below="@+id/btn_convertir1"
+        android:ems="10"
+        android:hint="@string/lbl_dolar"
+        android:inputType="number" />
+
+</RelativeLayout>
